@@ -1,0 +1,19 @@
+# Backend Spring Boot
+presta-backend/target/
+presta-backend/.idea/
+**/application.properties
+
+# Frontend React
+presta-frontend/node_modules/
+presta-frontend/dist/
+
+# Fichiers sensibles
+.env
+.env.*
+!.env.example
+
+# IDE et système
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

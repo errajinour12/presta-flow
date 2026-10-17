@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer components {
+  /* Common Primary Button */
+  .btn-primary {
+    @apply bg-[#3b62ad] hover:bg-[#30508d] text-white px-5 py-2.5 rounded-xl font-medium shadow-sm transition-all duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer text-sm;
+  }
+
+  /* Common Secondary Button */
+  .btn-secondary {
+    @apply bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2.5 rounded-xl font-medium transition-all duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer text-sm;
+  }
+
+  /* Common Danger Button */
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-medium shadow-sm transition-all duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer text-sm;
+  }
+
+  /* Standard Input Field */
+  .input-field {
+    @apply w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3b62ad]/20 focus:border-[#3b62ad] transition-all placeholder:text-slate-400 font-medium;
+  }
+
+  /* Standard Select Field */
+  .select-field {
+    @apply w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#3b62ad]/20 focus:border-[#3b62ad] transition-all appearance-none cursor-pointer font-medium;
+  }
+
+  /* Card Containers */
+  .card-container {
+    @apply bg-white rounded-2xl border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)];
+  }
+
+  /* Table Header Row */
+  .table-header-row {
+    @apply border-b border-slate-100 bg-slate-50/70 text-[12px] uppercase tracking-wider text-slate-500 font-semibold;
+  }
+
+  /* Table Data Row */
+  .table-data-row {
+    @apply hover:bg-slate-50/50 transition-colors border-b border-slate-50 text-sm text-slate-700;
+  }
+
+  /* Status Badges */
+  .badge-success {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/60;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200/60;
+  }
+
+  .badge-error {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-red-50 text-red-700 border border-red-200/60;
+  }
+
+  .badge-neutral {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-600 border border-slate-200/60;
+  }
+}
